@@ -15,10 +15,9 @@ Design: [smoothies](https://cdn.discordapp.com/attachments/850245533838868480/85
 
 - Github pages
 - HTML
-- CSS
+- CSS flex
 - CSS background images
 - Responsive design
-- Css animation
 - FontAwesome
 
 ## Authors
