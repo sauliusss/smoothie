@@ -4,14 +4,16 @@
 
 :root {
   --primary-color: #ff5e61;
+  --primary-color-light: #fcc7d6;
+  --primary-color-dark: #876c74;
 }
 
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
   gap: 30px;
-  padding-top: 20px;
+  padding-top: 30px 0;
   justify-content: flex-start;
   align-items: center;
 }
@@ -29,7 +31,7 @@ main.container {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: calc(100% - 80px);
+  min-height: calc(100vh - 120px);
 }
 
 .logo {
@@ -132,24 +134,67 @@ main.container {
 }
 
 .text .list > .list-plus {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.text .list-plus > li {
+  line-height: 20px;
 }
 
 .text .list-plus > li::before {
+  content: "+";
+  margin-right: 10px;
+  color: var(--primary-color);
+  font-size: 40px;
+  vertical-align: bottom;
 }
 
-.text .list > .list-image {
+.text .list > .list-img {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
 }
 
-.text .list-image > li {
+.text .list-img > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color-light);
+  border-radius: 50%;
 }
 
-.text .list-image img {
+.text .list-img img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .text > form {
 }
 
 .text > form > button {
+  background-color: var(--primary-color);
+  padding: 1em 2em;
+  line-height: 1em;
+  border: none;
+  border-radius: 0.5em;
+  transition: all 0.3s;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.text > form > button:hover {
+  background-color: var(--primary-color-dark);
+  color: #fff;
+  border-radius: 1.5em;
 }
 
 @media (min-width: 480px) {
@@ -185,6 +230,10 @@ main.container {
 @media (min-width: 1000px) {
   .container {
     width: 900px;
+  }
+
+  .text > .contains {
+    width: 100%;
   }
 }
 
