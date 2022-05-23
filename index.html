@@ -14,15 +14,18 @@
         <a href="#">Home</a>
         <a href="#">Smoothies</a>
         <a href="#">Contact us</a>
-      </nav>
-      <nav class="icons">
         <a href="#" class="fa fa-shopping-basket"></a>
         <a href="#" class="fa fa-search"></a>
       </nav>
+      <i class="fa fa-bars hamburger"></i>
     </header>
     <main class="container">
       <div class="gallery">
-        <img src="./img/smoothie.png" alt="drink" />
+        <picture>
+          <source media="(max-width: 799px)" srcset="./img/smoothie-mobile.png" />
+          <source media="(min-width: 800px)" srcset="./img/smoothie.png" />
+          <img src="./img/smoothie.png" alt="drink" />
+        </picture>
         <i class="fa fa-angle-left"></i>
         <i class="fa fa-angle-right"></i>
       </div>
