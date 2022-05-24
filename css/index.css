@@ -32,6 +32,7 @@ header.container {
   position: fixed;
   top: 0;
   z-index: 1;
+  background-color: #fff;
 }
 
 main.container {
@@ -59,7 +60,8 @@ main.container {
   z-index: 1;
   text-align: center;
   transform: translateY(95%);
-  box-shadow: 0 4px 4px -4px #0003;
+  background-color: #fff;
+  box-shadow: 0 6px 4px -6px #0004;
 }
 
 .menu-visible .main-menu {
@@ -108,7 +110,7 @@ main.container {
   height: 1.4em;
   background-color: var(--primary-color);
   color: white;
-  border-radius: 20px;
+  border-radius: 50%;
   line-height: 1.4em;
   text-align: center;
 }
@@ -140,9 +142,6 @@ main.container {
   letter-spacing: -1px;
   font-weight: 900;
   font-size: 40px;
-}
-
-.text > .description {
 }
 
 .text > .contains {
@@ -203,9 +202,6 @@ main.container {
   height: 36px;
   object-fit: contain;
   object-position: center;
-}
-
-.text > form {
 }
 
 .text > form > button {
@@ -273,7 +269,7 @@ main.container {
   }
 
   .text > .contains {
-    width: 100%;
+    flex-direction: row;
   }
 }
 
