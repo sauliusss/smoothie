@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   gap: 30px;
-  padding-top: 70px 0 30px 0;
+  padding: 82px 0 30px 0;
   justify-content: flex-start;
   align-items: center;
 }
@@ -91,7 +91,7 @@ main.container {
 .gallery {
   padding: 0 0.7em;
   position: relative;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .gallery > picture {
@@ -117,12 +117,12 @@ main.container {
 
 .gallery > .fa.fa-angle-left {
   left: 0;
-  padding-right: 2px;
+  padding-right: 0.17em;
 }
 
 .gallery > .fa.fa-angle-right {
   right: 0;
-  padding-left: 2px;
+  padding-right: 0.17em;
 }
 
 .text {
@@ -176,7 +176,7 @@ main.container {
   content: "+";
   margin-right: 10px;
   color: var(--primary-color);
-  font-size: 40px;
+  font-size: 36px;
   vertical-align: bottom;
 }
 
